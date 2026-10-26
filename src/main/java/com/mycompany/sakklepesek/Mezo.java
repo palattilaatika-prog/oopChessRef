@@ -27,6 +27,14 @@ public record Mezo(int oszlop, int sor) {
 
         return new Mezo(oszlop, sor);
     }
+    public Mezo eltol(int dOszlop, int dSor) {
+        int ujo = oszlop + dOszlop;
+        int ujs = sor + dSor;
+        if (ujo < 0 || ujo > 7 || ujs < 0 || ujs > 7) {
+            return null;
+        }
+        return new Mezo(ujo, ujs);
+    }
 
     @Override
     public String toString() {

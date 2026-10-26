@@ -4,10 +4,19 @@
  */
 package com.mycompany.sakklepesek.Figurak;
 
+import com.mycompany.sakklepesek.Irany;
+
 /**
  *
  * @author Denes
  */
-public class Vezer {
-    
+public class Vezer extends CsuszoFigura {
+    public Vezer(boolean feher) {
+        super(feher, Irany.MINDEN);
+    }
+
+    @Override
+    public char jel() {
+        return isFeher() ? '♕' : '♛';
+    }
 }

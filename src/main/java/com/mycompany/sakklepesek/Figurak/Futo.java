@@ -4,10 +4,19 @@
  */
 package com.mycompany.sakklepesek.Figurak;
 
+import com.mycompany.sakklepesek.Irany;
+
 /**
  *
  * @author Denes
  */
-public class Futo {
-    
+public class Futo extends CsuszoFigura {
+    public Futo(boolean feher) {
+        super(feher, Irany.ATLOS);
+    }
+
+    @Override
+    public char jel() {
+        return isFeher() ? '♗' : '♝';
+    }
 }

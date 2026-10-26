@@ -4,10 +4,19 @@
  */
 package com.mycompany.sakklepesek.Figurak;
 
+import com.mycompany.sakklepesek.Irany;
+
 /**
  *
  * @author Denes
  */
-public class Bastya {
-    
+public class Bastya extends CsuszoFigura {
+    public Bastya(boolean feher) {
+        super(feher, Irany.ORTOGONALIS);
+    }
+
+    @Override
+    public char jel() {
+        return isFeher() ? '♖' : '♜';
+    }
 }
