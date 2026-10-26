@@ -5,7 +5,7 @@ Supported moves:
 Every piece moves by the rules. I also included en pessant, castleing mechanism and pawn transforms.
 Known issues:
 The pawn always transforms to a queen. The castleing mechanism only checks the position of the pieces ( if the king gets a check, moves and goes back to starting place, it will still be able to castle which is not supported)
-(Used AI to create the chessboard, and work out the pawn logic)
+(Used AI to create the chessboard, work out the pawn logic and the tests)
 How to run:
 Run the "Sakklepesek.java" file.
 PlantUML:
